@@ -34,6 +34,7 @@
 }
 
 .modal-box {
+    position: absolute;
     display: none;
     height: 100vh;
     width: 100vw;
@@ -42,21 +43,23 @@
 }
 
 .card-box {
-    padding-top: 7vw;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 100vw;
+    margin: 30px 0 0 0 ;
+    padding: 0;
+    width: 95vw;
     height: 60vh;
-    gap: 4vw;
+    gap: 3vw;
 }
 
 .card {
     position: relative;
     display: flex;
-    width: 165px;
-    height: 165px;
+    width: calc(7vh + 35 * (100vw/400));
+    height: calc(7vh + 35 * (100vw/400));
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -174,17 +177,18 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        margin: 40px 0 0 0 ;
+        margin: 30px 0 0 0 ;
         padding: 0;
-        width: 100vw;
+        width: 95vw;
         height: 60vh;
         gap: 3vw;
     }
 
     .card {
+        position: relative;
         display: flex;
-        width: 13vw;
-        height: 13vw;
+        width: calc(7vh + 35 * (100vw/400));
+        height: calc(7vh + 35 * (100vw/400));
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -239,9 +243,9 @@
         flex-wrap: wrap;
         margin: 20px 0 0 0 ;
         padding: 0;
-        width: 95vw;
+        width: 90vw;
         height: 70vh;
-        gap: 1vw 9vw;
+        gap: 1vw 7vw;
     }
 
     .card {
