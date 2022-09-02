@@ -20,14 +20,14 @@ function toggleModal() {
 let indexButton = 1;
 
 
-button1.style.backgroundColor = '#506368';
+button1.style.backgroundColor = '#ffffff';
 
 function showCards(btnNumber) {
     if (btnNumber === 1) {
         indexButton === 1;
-        button1.style.backgroundColor = '#506368';
-        button2.style.backgroundColor = '#151c1e';
-        button3.style.backgroundColor = '#151c1e';
+        button1.style.backgroundColor = '#ffffff';
+        button2.style.backgroundColor = '#c79051a1';
+        button3.style.backgroundColor = '#c79051a1';
         cardBox.innerHTML = '';
         const userData = fetch('https://dummyjson.com/users')
         .then(dadosCrus => dadosCrus.json())
@@ -36,9 +36,9 @@ function showCards(btnNumber) {
     }
     if (btnNumber === 2) {
         indexButton === 2;
-        button1.style.backgroundColor = '#151c1e';
-        button2.style.backgroundColor = '#506368';
-        button3.style.backgroundColor = '#151c1e';
+        button1.style.backgroundColor = '#c79051a1';
+        button2.style.backgroundColor = '#ffffff';
+        button3.style.backgroundColor = '#c79051a1';
         cardBox.innerHTML = '';
         const userData = fetch('https://dummyjson.com/users')
         .then(dadosCrus => dadosCrus.json())
@@ -47,9 +47,9 @@ function showCards(btnNumber) {
     }
     if (btnNumber === 3) {
         indexButton === 3;
-        button1.style.backgroundColor = '#151c1e';
-        button2.style.backgroundColor = '#151c1e';
-        button3.style.backgroundColor = '#506368';
+        button1.style.backgroundColor = '#c79051a1';
+        button2.style.backgroundColor = '#c79051a1';
+        button3.style.backgroundColor = '#ffffff';
         cardBox.innerHTML = '';
         const userData = fetch('https://dummyjson.com/users')
         .then(dadosCrus => dadosCrus.json())

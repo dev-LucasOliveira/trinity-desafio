@@ -19,13 +19,61 @@
         </div>
 
         <div class="button-pedro">
+
             <button class="add-button" onclick="toggleModal()">
-              Add user
+              Add User
             </button>
+        
         </div>
-        <div id="modal-div" class="modal-box" onclick="toggleModal()">
+
+        <div id="modal-div" class="modal-box">
+        
             <div class="modal-content">
             
+                <div class="fieldset-box">
+
+                    <div class="text-box-fieldset">
+
+                        <p class="modal-title">Use This Fieldset To Add A New Card To The Row!</p>
+
+                        <p class="modal-text-content">Here you can add your own card! <br><br>Our system will receive your informations and create a card that matches with you!</p>
+
+                    </div>
+
+                    <fieldset class="fieldset">
+
+                        <legend> Add A New Card</legend>
+                        
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        
+                        <label for="role">Role:</label>
+                        <input type="text" id="role" name="role"><br><br>
+                        
+                        <label for="birthday">Birthday:</label>
+                        <input type="text" id="birthday" name="birthday"><br><br>
+                        
+                        <label for="status">Status:</label>
+                        <input type="text" id="status" name="status"><br><br>
+                        
+                        <label for="mode">Mode:</label>
+                        <input type="text" id="mode" name="mode"><br><br>
+                        
+                        <div class="modal-button-box">
+
+                            <button class="modal-button" onclick="toggleModal()">Cancel</button>
+
+                            <button class="modal-button">Submit</button>
+    
+                        </div>
+
+                    </fieldset>    
+
+                </div>
+
             </div>    
         </div>
 
