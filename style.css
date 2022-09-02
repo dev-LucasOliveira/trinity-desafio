@@ -1,0 +1,376 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #C79051;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head-box {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 9vh;
+    background-color: #e7e7e7;
+    box-shadow: 0px 3px 8px #0e171a;
+    z-index: 1;
+}
+
+.trinity-logo {
+    height: 80%;
+    position: absolute;
+    height: 100%;
+}
+
+.modal-box {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card-box {
+    padding-top: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 60vh;
+    gap: 4vw;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    width: 165px;
+    height: 165px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #0e171a;
+    box-shadow: 0px 0px 25px #0e171a;
+}
+
+.image {
+    width: 100%;
+    border-radius: 9px;
+}
+  
+.text-box {
+    background-image: linear-gradient(transparent, #151c1e);
+    color: #f3f3f3;
+    margin-top: -63%;
+    width: 100%;
+    height: 63%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 8px;
+}
+
+.name {
+    font-size: 1.7em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    padding: 1% 5% 1% 5%;
+    display: flex;
+    justify-content: center;
+    cursor: default;
+}
+
+.upper-descripition {
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    cursor: default;
+}
+
+.description {
+    font-size: 1.2em;
+    width: 100%;
+    padding: 1% 5% 5% 5%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: center;
+    cursor: default;
+}
+
+.personal-description {
+    font-weight: bold;
+    font-size: 1.2em;
+    width: 100%;
+    padding: 1% 5% 5% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: default;
+}
+
+.button-box {
+    position: absolute;
+    top: 86vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.button {
+    background-color: #151c1e;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    color: #f3f3f3;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 12px;
+    border: none;
+}
+
+.button-pedro {
+    position: absolute;
+    top: 92vh
+}
+
+.add-button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #151c1e;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #e7e7e7;
+    border: none;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .card-box {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 40px 0 0 0 ;
+        padding: 0;
+        width: 100vw;
+        height: 60vh;
+        gap: 3vw;
+    }
+
+    .card {
+        display: flex;
+        width: 13vw;
+        height: 13vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: #0e171a;
+        box-shadow: 0px 0px 25px #0e171a;
+    }
+
+    .text-box {
+        background-image: linear-gradient(transparent, #151c1e);
+        color: #f3f3f3;
+        margin-top: -63%;
+        width: 100%;
+        height: 63%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-size: calc(4.2px + 2 * (100vw / 700));
+    }
+
+    .button {
+        background-color: #151c1e;
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        color: #f3f3f3;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 8px;
+        border: none;
+    }
+    
+    .add-button {
+        width: 75px;
+        height: 22px;
+        border-radius: 5px;
+        background-color: #151c1e;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 12px;
+        color: #e7e7e7;
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .card-box {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 20px 0 0 0 ;
+        padding: 0;
+        width: 95vw;
+        height: 70vh;
+        gap: 1vw 9vw;
+    }
+
+    .card {
+        display: flex;
+        width: calc(13vh + 15 * (100vw/400));
+        height: calc(13vh + 15 * (100vw/400));
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: #0e171a;
+        box-shadow: 0px 0px 25px #0e171a;
+    }
+
+    .text-box {
+        background-image: linear-gradient(transparent, #151c1e);
+        color: #f3f3f3;
+        margin-top: -63%;
+        width: 100%;
+        height: 63%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-size: calc(4.5px + 2 * (100vw / 700));
+    }
+
+    .name {
+        font-size: 1.5em;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        width: 100%;
+        padding: 1% 5% 1% 5%;
+        display: flex;
+        justify-content: center;
+        cursor: default;
+    }
+
+    .button {
+        background-color: #151c1e;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        color: #f3f3f3;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 10px;
+        border: none;
+    }
+    
+    .add-button {
+        width: 85px;
+        height: 25px;
+        border-radius: 5px;
+        background-color: #151c1e;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 14px;
+        color: #e7e7e7;
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .card-box {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 20px 0 0 0 ;
+        padding: 0;
+        width: 95vw;
+        height: 70vh;
+        gap: 1vw 6vw;
+    }
+
+    .card {
+        display: flex;
+        width: calc(11vh + 23 * (100vw/400));
+        height: calc(11vh + 23 * (100vw/400));
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: #0e171a;
+        box-shadow: 0px 0px 25px #0e171a;
+    }
+
+    .text-box {
+        background-image: linear-gradient(transparent, #151c1e);
+        color: #f3f3f3;
+        margin-top: -63%;
+        width: 100%;
+        height: 63%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-size: calc(4px + 2 * (100vw / 700));
+    }
+
+    .name {
+        font-size: 1.5em;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        width: 100%;
+        padding: 1% 5% 1% 5%;
+        display: flex;
+        justify-content: center;
+        cursor: default;
+    }
+
+    .button {
+        background-color: #151c1e;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        color: #f3f3f3;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 10px;
+        border: none;
+    }
+    
+    .add-button {
+        width: 85px;
+        height: 25px;
+        border-radius: 5px;
+        background-color: #151c1e;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 14px;
+        color: #e7e7e7;
+        border: none;
+    }
+}
