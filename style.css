@@ -33,7 +33,6 @@
 }
 
 .trinity-logo {
-    height: 80%;
     position: absolute;
     height: 100%;
 }
@@ -266,7 +265,6 @@ input {
     background-color: transparent;
     border: none;
     width: 100%;
-    margin: 0.2vw 0px;
     border-bottom: 1px solid #e7e7e7de;
     outline: none;
 }
@@ -280,7 +278,6 @@ input::placeholder {
     display: flex;
     justify-content: center;
     gap: 5vw;
-    margin-top: 1vh;
 }
 
 .modal-button {
