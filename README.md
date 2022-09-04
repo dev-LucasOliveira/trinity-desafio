@@ -1,4 +1,4 @@
-Toda a página está funcionande, aparentemente bem. 
+Toda a página está funcionando aparentemente bem. 
 
 O problema aparece quando eu estou em alguma página diferente da 1 e tento adicionar um novo card, assim que eu aperto o botão de submit, ele mostra na tela os 12 primeiros cards e continua na página que eu estava anteriormente.
 
