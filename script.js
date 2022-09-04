@@ -1,5 +1,3 @@
-let firstUser;
-
 const cardBox = document.getElementById("card-box");
 const modalDiv = document.getElementById('modal-div');
 const button1 = document.getElementById('button1');
@@ -16,6 +14,9 @@ const statusHTML = document.getElementById('status');
 const mode = document.getElementById('mode');
 const image = document.getElementById('image');
 
+
+// Função que mostra e esconde o Modal (aparentemente funcionando normalmente)
+
 let showModal = false;
 
 function toggleModal() {
@@ -26,6 +27,9 @@ function toggleModal() {
         modalDiv.style.display = 'none';
     };
 }
+
+
+// Adicionei 60 alunos para testar a quebra das páginas
 
 let studentsArray = [
     
@@ -510,8 +514,11 @@ let studentsArray = [
     'mode': 'Onsite'},
 ]
 
+
+// Função que recebe as informações e inclui o aluno novo na posição 0 do studentsArray e cria o card na tela (está com bug, e não estou conseguindo debugar)
+
 let indexButton = 1;
-console.log(studentsArray);
+// console.log(studentsArray);
 
 function submitCard() {
 
@@ -519,7 +526,7 @@ function submitCard() {
     // console.log(student);
 
     studentsArray.unshift(student);
-    console.log(studentsArray);
+    // console.log(studentsArray);
 
     image.value = '';
     firstName.value = '';
@@ -587,7 +594,13 @@ function submitCard() {
 
 };
 
+
+// Define o botão 1 branco como padrão de carregamento de página
+
 button1.style.backgroundColor = '#ffffff';
+
+
+// Função que define a página escolhida a partir dos botões de página redondos (aparentemente funcionando normalmente)
 
 function showCards(btnNumber) {
     if (btnNumber === 1) {
@@ -717,6 +730,9 @@ function showCards(btnNumber) {
     };
 }
 
+
+// Função que gera os cards do studentsArray (aparentemente funcionando normalmente)
+
 function renderUserCard(studentsArray) {
     const cardHTML = `
         <div class="card">      
@@ -744,6 +760,9 @@ function renderUserCard(studentsArray) {
     newCard.innerHTML = cardHTML;
     cardBox.appendChild(newCard);
 };
+
+
+// forEach que gera a página inicial com os 12 primeiros cards co studentsArray (aparentemente funcionando normalmente)
 
 studentsArray.forEach((user, contagem) => {
     if (contagem < 12 && indexButton === 1) {
