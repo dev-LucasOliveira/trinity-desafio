@@ -5,6 +5,9 @@ const modalDiv = document.getElementById('modal-div');
 const button1 = document.getElementById('button1');
 const button2 = document.getElementById('button2');
 const button3 = document.getElementById('button3');
+const button4 = document.getElementById('button4');
+const button5 = document.getElementById('button5');
+const button6 = document.getElementById('button6');
 const firstName = document.getElementById('first-name');
 const lastName = document.getElementById('last-name');
 const role = document.getElementById('role');
@@ -50,7 +53,465 @@ let studentsArray = [
     'statusHTML': 'Active',
     'mode': 'Onsite'},
 
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Lucas', 
+    'lastName': 'Oliveira',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Pedro', 
+    'lastName': 'Luna',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Marlos', 
+    'lastName': 'Gonçalves',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Lucas', 
+    'lastName': 'Oliveira',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Pedro', 
+    'lastName': 'Luna',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Marlos', 
+    'lastName': 'Gonçalves',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Lucas', 
+    'lastName': 'Oliveira',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Pedro', 
+    'lastName': 'Luna',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Marlos', 
+    'lastName': 'Gonçalves',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Lucas', 
+    'lastName': 'Oliveira',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Pedro', 
+    'lastName': 'Luna',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Marlos', 
+    'lastName': 'Gonçalves',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Lucas', 
+    'lastName': 'Oliveira',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Pedro', 
+    'lastName': 'Luna',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Marlos', 
+    'lastName': 'Gonçalves',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Lucas', 
+    'lastName': 'Oliveira',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Pedro', 
+    'lastName': 'Luna',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Marlos', 
+    'lastName': 'Gonçalves',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Lucas', 
+    'lastName': 'Oliveira',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Pedro', 
+    'lastName': 'Luna',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Marlos', 
+    'lastName': 'Gonçalves',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Lucas', 
+    'lastName': 'Oliveira',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Pedro', 
+    'lastName': 'Luna',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Marlos', 
+    'lastName': 'Gonçalves',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Lucas', 
+    'lastName': 'Oliveira',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Pedro', 
+    'lastName': 'Luna',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Marlos', 
+    'lastName': 'Gonçalves',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Lucas', 
+    'lastName': 'Oliveira',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Pedro', 
+    'lastName': 'Luna',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Marlos', 
+    'lastName': 'Gonçalves',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Lucas', 
+    'lastName': 'Oliveira',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Pedro', 
+    'lastName': 'Luna',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Marlos', 
+    'lastName': 'Gonçalves',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Lucas', 
+    'lastName': 'Oliveira',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Pedro', 
+    'lastName': 'Luna',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Marlos', 
+    'lastName': 'Gonçalves',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Lucas', 
+    'lastName': 'Oliveira',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Pedro', 
+    'lastName': 'Luna',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Marlos', 
+    'lastName': 'Gonçalves',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Lucas', 
+    'lastName': 'Oliveira',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Pedro', 
+    'lastName': 'Luna',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Marlos', 
+    'lastName': 'Gonçalves',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Lucas', 
+    'lastName': 'Oliveira',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Pedro', 
+    'lastName': 'Luna',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Marlos', 
+    'lastName': 'Gonçalves',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Lucas', 
+    'lastName': 'Oliveira',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Pedro', 
+    'lastName': 'Luna',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Marlos', 
+    'lastName': 'Gonçalves',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Lucas', 
+    'lastName': 'Oliveira',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Pedro', 
+    'lastName': 'Luna',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Marlos', 
+    'lastName': 'Gonçalves',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Lucas', 
+    'lastName': 'Oliveira',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Pedro', 
+    'lastName': 'Luna',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Marlos', 
+    'lastName': 'Gonçalves',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Lucas', 
+    'lastName': 'Oliveira',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Pedro', 
+    'lastName': 'Luna',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Marlos', 
+    'lastName': 'Gonçalves',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
 ]
+
+let indexButton = 1;
+console.log(studentsArray);
 
 function submitCard() {
 
@@ -70,12 +531,61 @@ function submitCard() {
     modalDiv.style.display = 'none';
     cardBox.innerHTML = '';
 
-    studentsArray => studentsArray.splice(1,12);
-    studentsArray.forEach((user, contagem) => (renderUserCard(user)));
+    if (indexButton === 1) {
+        studentsArray.forEach((user, contagem) => {
+            if (contagem < 12) {
+                studentsArray => studentsArray.splice(1, 12)
+                renderUserCard(user)
+            }
+        }); 
+    }
+
+    if (indexButton === 2) {
+        studentsArray.forEach((user, contagem) => {
+            if (contagem > 12 && contagem < 24) {
+                studentsArray => studentsArray.splice(12, 12)
+                renderUserCard(user)
+            }
+        });    
+    }
+
+    if (indexButton === 3) {
+        studentsArray.forEach((user, contagem) => {
+            if (contagem > 24 && contagem < 36) {
+                studentsArray => studentsArray.splice(24, 12)
+                renderUserCard(user)
+            }
+        });    
+    }
+
+    if (indexButton === 4) {
+        studentsArray.forEach((user, contagem) => {
+            if (contagem > 37 && contagem < 48) {
+                studentsArray => studentsArray.splice(36, 12)
+                renderUserCard(user)
+            }
+        });
+    }
+
+    if (indexButton === 5) {
+        studentsArray.forEach((user, contagem) => {
+            if (contagem > 49 && contagem < 60) {
+                studentsArray => studentsArray.splice(48, 12)
+                renderUserCard(user)
+            }
+        });    
+    }
+
+    if (indexButton === 6) {
+        studentsArray.forEach((user, contagem) => {
+            if (contagem > 61 && contagem < 72) {
+                studentsArray => studentsArray.splice(60, 12)
+                renderUserCard(user)
+            }
+        });  
+    }
 
 };
-
-let indexButton = 1;
 
 button1.style.backgroundColor = '#ffffff';
 
@@ -85,40 +595,123 @@ function showCards(btnNumber) {
         button1.style.backgroundColor = '#ffffff';
         button2.style.backgroundColor = '#c79051a1';
         button3.style.backgroundColor = '#c79051a1';
+        button4.style.backgroundColor = '#c79051a1';
+        button5.style.backgroundColor = '#c79051a1';
+        button6.style.backgroundColor = '#c79051a1';
         cardBox.innerHTML = '';
 
 
         studentsArray.forEach((user, contagem) => {
-            studentsArray.splice(1,12)
-            renderUserCard(user)});
+            if (contagem < 12) {
+                studentsArray => studentsArray.splice(1, 12)
+                renderUserCard(user)
+            }
+        });
 
 
     }
+
     if (btnNumber === 2) {
         indexButton === 2;
         button1.style.backgroundColor = '#c79051a1';
         button2.style.backgroundColor = '#ffffff';
         button3.style.backgroundColor = '#c79051a1';
+        button4.style.backgroundColor = '#c79051a1';
+        button5.style.backgroundColor = '#c79051a1';
+        button6.style.backgroundColor = '#c79051a1';
         cardBox.innerHTML = '';
 
 
         studentsArray.forEach((user, contagem) => {
-            studentsArray.splice(11,12)
-            renderUserCard(user)});
+            if (contagem > 11 && contagem < 24) {
+                studentsArray => studentsArray.splice(12, 12)
+                renderUserCard(user)
+            }
+        });
 
 
     }
+
     if (btnNumber === 3) {
         indexButton === 3;
         button1.style.backgroundColor = '#c79051a1';
         button2.style.backgroundColor = '#c79051a1';
         button3.style.backgroundColor = '#ffffff';
+        button4.style.backgroundColor = '#c79051a1';
+        button5.style.backgroundColor = '#c79051a1';
+        button6.style.backgroundColor = '#c79051a1';
         cardBox.innerHTML = '';
 
         
         studentsArray.forEach((user, contagem) => {
-            studentsArray.splice(21,12)
-            renderUserCard(user)});
+            if (contagem > 23 && contagem < 36) {
+                studentsArray => studentsArray.splice(24, 12)
+                renderUserCard(user)
+            }
+        });
+
+
+    }
+
+    if (btnNumber === 4) {
+        indexButton === 4;
+        button1.style.backgroundColor = '#c79051a1';
+        button2.style.backgroundColor = '#c79051a1';
+        button3.style.backgroundColor = '#c79051a1';
+        button4.style.backgroundColor = '#ffffff';
+        button5.style.backgroundColor = '#c79051a1';
+        button6.style.backgroundColor = '#c79051a1';
+        cardBox.innerHTML = '';
+
+
+        studentsArray.forEach((user, contagem) => {
+            if (contagem > 35 && contagem < 48) {
+                studentsArray => studentsArray.splice(36, 12)
+                renderUserCard(user)
+            }
+        });
+
+
+    }
+
+    if (btnNumber === 5) {
+        indexButton === 5;
+        button1.style.backgroundColor = '#c79051a1';
+        button2.style.backgroundColor = '#c79051a1';
+        button3.style.backgroundColor = '#c79051a1';
+        button4.style.backgroundColor = '#c79051a1';
+        button5.style.backgroundColor = '#ffffff';
+        button6.style.backgroundColor = '#c79051a1';
+        cardBox.innerHTML = '';
+
+
+        studentsArray.forEach((user, contagem) => {
+            if (contagem > 47 && contagem < 60) {
+                studentsArray => studentsArray.splice(48, 12)
+                renderUserCard(user)
+            }
+        });
+
+
+    }
+
+    if (btnNumber === 6) {
+        indexButton === 6;
+        button1.style.backgroundColor = '#c79051a1';
+        button2.style.backgroundColor = '#c79051a1';
+        button3.style.backgroundColor = '#c79051a1';
+        button4.style.backgroundColor = '#c79051a1';
+        button5.style.backgroundColor = '#c79051a1';
+        button6.style.backgroundColor = '#ffffff';
+        cardBox.innerHTML = '';
+
+        
+        studentsArray.forEach((user, contagem) => {
+            if (contagem > 59 && contagem < 72) {
+                studentsArray => studentsArray.splice(60, 12)
+                renderUserCard(user)
+            }
+        });
 
 
     };
@@ -152,10 +745,9 @@ function renderUserCard(studentsArray) {
     cardBox.appendChild(newCard);
 };
 
-studentsArray => studentsArray.splice(1,12);
-studentsArray.forEach((user, contagem) => (renderUserCard(user)));
-
-/* const userData = fetch('https://dummyjson.com/users')
-.then(dadosCrus => dadosCrus.json())
-.then(dadosJson => dadosJson.users.splice(1,12)
-    .forEach((user, contagem) => renderUserCard(user))); */
+studentsArray.forEach((user, contagem) => {
+    if (contagem < 12 && indexButton === 1) {
+        studentsArray => studentsArray.splice(1, 12)
+        renderUserCard(user)
+    }
+});
