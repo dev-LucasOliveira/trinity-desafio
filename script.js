@@ -545,71 +545,20 @@ function submitCard() {
 
     console.log(indexButton);
 
-    if (indexButton === 1) {
-        studentsArray.forEach((user, contagem) => {
-            if (contagem < 12) {
-                studentsArray => studentsArray.splice(1, 12)
-                renderUserCard(user)
-            }
-        });
+    
+    studentsArray.forEach((user, contagem) => {
+        if (contagem < 12) {
+            studentsArray => studentsArray.splice(1, 12)
+            renderUserCard(user)
+        }
+    });
 
-        let indexButton = 1;
-    }
-
-    if (indexButton === 2) {
-        studentsArray.forEach((user, contagem) => {
-            if (contagem > 12 && contagem < 24) {
-                studentsArray => studentsArray.splice(12, 12)
-                renderUserCard(user)
-            }
-        });
-        
-        let indexButton = 2;
-    }
-
-    if (indexButton === 3) {
-        studentsArray.forEach((user, contagem) => {
-            if (contagem > 24 && contagem < 36) {
-                studentsArray => studentsArray.splice(24, 12)
-                renderUserCard(user)
-            }
-        });
-        
-        let indexButton = 3;
-    }
-
-    if (indexButton === 4) {
-        studentsArray.forEach((user, contagem) => {
-            if (contagem > 37 && contagem < 48) {
-                studentsArray => studentsArray.splice(36, 12)
-                renderUserCard(user)
-            }
-        });
-        
-        let indexButton = 4;
-    }
-
-    if (indexButton === 5) {
-        studentsArray.forEach((user, contagem) => {
-            if (contagem > 49 && contagem < 60) {
-                studentsArray => studentsArray.splice(48, 12)
-                renderUserCard(user)
-            }
-        });
-        
-        let indexButton = 5;
-    }
-
-    if (indexButton === 6) {
-        studentsArray.forEach((user, contagem) => {
-            if (contagem > 61 && contagem < 72) {
-                studentsArray => studentsArray.splice(60, 12)
-                renderUserCard(user)
-            }
-        });
-        
-        let indexButton = 6;
-    }
+    button1.style.backgroundColor = '#ffffff';
+    button2.style.backgroundColor = '#c79051a1';
+    button3.style.backgroundColor = '#c79051a1';
+    button4.style.backgroundColor = '#c79051a1';
+    button5.style.backgroundColor = '#c79051a1';
+    button6.style.backgroundColor = '#c79051a1';
 
 };
 
@@ -789,80 +738,9 @@ function renderUserCard(studentsArray) {
 
 // forEach que gera a página inicial com os 12 primeiros cards com studentsArray (aparentemente funcionando normalmente)
 
-if (indexButton === 1) {
-
-    cardBox.innerHTML = '';
-
-    studentsArray.forEach((user, contagem) => {
-        if (contagem < 12) {
-            studentsArray => studentsArray.splice(1, 12)
-            renderUserCard(user)
-        }
-    });
-
-}
-
-if (indexButton === 2) {
-
-    cardBox.innerHTML = '';
-
-    studentsArray.forEach((user, contagem) => {
-        if (contagem > 11 && contagem < 24) {
-            studentsArray => studentsArray.splice(12, 12)
-            renderUserCard(user)
-        }
-    });
-
-}
-
-if (indexButton === 3) {
-
-    cardBox.innerHTML = '';
-    
-    studentsArray.forEach((user, contagem) => {
-        if (contagem > 23 && contagem < 36) {
-            studentsArray => studentsArray.splice(24, 12)
-            renderUserCard(user)
-        }
-    });
-
-}
-
-if (indexButton === 4) {
-
-    cardBox.innerHTML = '';
-
-    studentsArray.forEach((user, contagem) => {
-        if (contagem > 35 && contagem < 48) {
-            studentsArray => studentsArray.splice(36, 12)
-            renderUserCard(user)
-        }
-    });
-
-}
-
-if (indexButton === 5) {
-
-    cardBox.innerHTML = '';
-
-    studentsArray.forEach((user, contagem) => {
-        if (contagem > 47 && contagem < 60) {
-            studentsArray => studentsArray.splice(48, 12)
-            renderUserCard(user)
-        }
-    });
-
-}
-
-if (indexButton === 6) {
-
-    cardBox.innerHTML = '';
-    
-    studentsArray.forEach((user, contagem) => {
-        if (contagem > 59 && contagem < 72) {
-            studentsArray => studentsArray.splice(60, 12)
-            renderUserCard(user)
-        }
-    });
-
-};
+studentsArray.forEach((user, contagem) => {
+    if (contagem < 12) {
+        studentsArray => studentsArray.splice(1, 12)
+        renderUserCard(user)
+    }
+});
