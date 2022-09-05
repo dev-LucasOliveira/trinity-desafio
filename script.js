@@ -762,11 +762,82 @@ function renderUserCard(studentsArray) {
 };
 
 
-// forEach que gera a página inicial com os 12 primeiros cards co studentsArray (aparentemente funcionando normalmente)
+// forEach que gera a página inicial com os 12 primeiros cards com studentsArray (aparentemente funcionando normalmente)
 
-studentsArray.forEach((user, contagem) => {
-    if (contagem < 12 && indexButton === 1) {
-        studentsArray => studentsArray.splice(1, 12)
-        renderUserCard(user)
-    }
-});
+if (indexButton === 1) {
+
+    cardBox.innerHTML = '';
+
+    studentsArray.forEach((user, contagem) => {
+        if (contagem < 12) {
+            studentsArray => studentsArray.splice(1, 12)
+            renderUserCard(user)
+        }
+    });
+
+}
+
+if (indexButton === 2) {
+
+    cardBox.innerHTML = '';
+
+    studentsArray.forEach((user, contagem) => {
+        if (contagem > 11 && contagem < 24) {
+            studentsArray => studentsArray.splice(12, 12)
+            renderUserCard(user)
+        }
+    });
+
+}
+
+if (indexButton === 3) {
+
+    cardBox.innerHTML = '';
+    
+    studentsArray.forEach((user, contagem) => {
+        if (contagem > 23 && contagem < 36) {
+            studentsArray => studentsArray.splice(24, 12)
+            renderUserCard(user)
+        }
+    });
+
+}
+
+if (indexButton === 4) {
+
+    cardBox.innerHTML = '';
+
+    studentsArray.forEach((user, contagem) => {
+        if (contagem > 35 && contagem < 48) {
+            studentsArray => studentsArray.splice(36, 12)
+            renderUserCard(user)
+        }
+    });
+
+}
+
+if (indexButton === 5) {
+
+    cardBox.innerHTML = '';
+
+    studentsArray.forEach((user, contagem) => {
+        if (contagem > 47 && contagem < 60) {
+            studentsArray => studentsArray.splice(48, 12)
+            renderUserCard(user)
+        }
+    });
+
+}
+
+if (indexButton === 6) {
+
+    cardBox.innerHTML = '';
+    
+    studentsArray.forEach((user, contagem) => {
+        if (contagem > 59 && contagem < 72) {
+            studentsArray => studentsArray.splice(60, 12)
+            renderUserCard(user)
+        }
+    });
+
+};
