@@ -5,3 +5,5 @@ O problema aparece quando eu estou em alguma página diferente da 1 e tento adic
 Depois de adicionar um novo card, quando eu navego entre as páginas, o site volta rodar normalmente.
 
 Por isso, acredito que o problema esteja na minha função 'submitCard()'!
+
+atualização: o problema está na função toggleModal
