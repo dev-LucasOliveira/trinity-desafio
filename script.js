@@ -26,6 +26,7 @@ function toggleModal() {
     }else {
         modalDiv.style.display = 'none';
     };
+
 }
 
 
@@ -515,7 +516,7 @@ let studentsArray = [
 ]
 
 
-// Função que recebe as informações e inclui o aluno novo na posição 0 do studentsArray e cria o card na tela (está com bug, e não estou conseguindo debugar)
+// Função que recebe as informações e inclui o aluno novo na posição 0 do studentsArray usando .unshift e cria o card na tela (está com bug, e não estou conseguindo debugar)
 
 let indexButton = 1;
 // console.log(studentsArray);
@@ -535,8 +536,14 @@ function submitCard() {
     role.value = '';
     statusHTML.value = '';
     mode.value = '';
-    modalDiv.style.display = 'none';
     cardBox.innerHTML = '';
+
+    
+    let showModal = 'false';
+    toggleModal();
+
+
+    console.log(indexButton);
 
     if (indexButton === 1) {
         studentsArray.forEach((user, contagem) => {
@@ -544,7 +551,9 @@ function submitCard() {
                 studentsArray => studentsArray.splice(1, 12)
                 renderUserCard(user)
             }
-        }); 
+        });
+
+        let indexButton = 1;
     }
 
     if (indexButton === 2) {
@@ -553,7 +562,9 @@ function submitCard() {
                 studentsArray => studentsArray.splice(12, 12)
                 renderUserCard(user)
             }
-        });    
+        });
+        
+        let indexButton = 2;
     }
 
     if (indexButton === 3) {
@@ -562,7 +573,9 @@ function submitCard() {
                 studentsArray => studentsArray.splice(24, 12)
                 renderUserCard(user)
             }
-        });    
+        });
+        
+        let indexButton = 3;
     }
 
     if (indexButton === 4) {
@@ -572,6 +585,8 @@ function submitCard() {
                 renderUserCard(user)
             }
         });
+        
+        let indexButton = 4;
     }
 
     if (indexButton === 5) {
@@ -580,7 +595,9 @@ function submitCard() {
                 studentsArray => studentsArray.splice(48, 12)
                 renderUserCard(user)
             }
-        });    
+        });
+        
+        let indexButton = 5;
     }
 
     if (indexButton === 6) {
@@ -589,7 +606,9 @@ function submitCard() {
                 studentsArray => studentsArray.splice(60, 12)
                 renderUserCard(user)
             }
-        });  
+        });
+        
+        let indexButton = 6;
     }
 
 };
@@ -604,7 +623,7 @@ button1.style.backgroundColor = '#ffffff';
 
 function showCards(btnNumber) {
     if (btnNumber === 1) {
-        indexButton === 1;
+        let indexButton = 1;
         button1.style.backgroundColor = '#ffffff';
         button2.style.backgroundColor = '#c79051a1';
         button3.style.backgroundColor = '#c79051a1';
@@ -621,11 +640,12 @@ function showCards(btnNumber) {
             }
         });
 
+        console.log(indexButton);
 
     }
 
     if (btnNumber === 2) {
-        indexButton === 2;
+        let indexButton = 2;
         button1.style.backgroundColor = '#c79051a1';
         button2.style.backgroundColor = '#ffffff';
         button3.style.backgroundColor = '#c79051a1';
@@ -642,11 +662,12 @@ function showCards(btnNumber) {
             }
         });
 
+        console.log(indexButton);
 
     }
 
     if (btnNumber === 3) {
-        indexButton === 3;
+        let indexButton = 3;
         button1.style.backgroundColor = '#c79051a1';
         button2.style.backgroundColor = '#c79051a1';
         button3.style.backgroundColor = '#ffffff';
@@ -663,11 +684,12 @@ function showCards(btnNumber) {
             }
         });
 
+        console.log(indexButton);
 
     }
 
     if (btnNumber === 4) {
-        indexButton === 4;
+        let indexButton = 4;
         button1.style.backgroundColor = '#c79051a1';
         button2.style.backgroundColor = '#c79051a1';
         button3.style.backgroundColor = '#c79051a1';
@@ -684,11 +706,12 @@ function showCards(btnNumber) {
             }
         });
 
+        console.log(indexButton);
 
     }
 
     if (btnNumber === 5) {
-        indexButton === 5;
+        let indexButton = 5;
         button1.style.backgroundColor = '#c79051a1';
         button2.style.backgroundColor = '#c79051a1';
         button3.style.backgroundColor = '#c79051a1';
@@ -705,11 +728,12 @@ function showCards(btnNumber) {
             }
         });
 
+        console.log(indexButton);
 
     }
 
     if (btnNumber === 6) {
-        indexButton === 6;
+        let indexButton = 6;
         button1.style.backgroundColor = '#c79051a1';
         button2.style.backgroundColor = '#c79051a1';
         button3.style.backgroundColor = '#c79051a1';
@@ -726,6 +750,7 @@ function showCards(btnNumber) {
             }
         });
 
+        console.log(indexButton);
 
     };
 }
