@@ -149,7 +149,7 @@
     top: 77vh;
     width: 4vh;
     height: 4vh;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     border: 2px solid #997c5c;
@@ -167,14 +167,14 @@
     position: absolute;
     top: 84vh;
     width: 100vw;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 1vw;
 }
 
 .button {
-    background-color: #e7e7e7de;
+    background-color: #e7e7e79a;
     width: 1vw;
     height: 1vw;
     border-radius: 50%;
@@ -184,8 +184,8 @@
 
 .button:hover {
     background-color: #997c5c;
-    width: 0.9vw;
-    height: 0.9vw;
+    width: 0.95vw;
+    height: 0.95vw;
     border-radius: 50%;
     border: none;
     transition-duration: 0.1s;

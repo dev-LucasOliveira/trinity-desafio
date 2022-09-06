@@ -23,12 +23,10 @@ function toggleModal() {
     if (showModal === true) {
 
         modalBox.style.display = 'flex';
-        modalBox.style.transitionDuration = '3s';
     
     }else {
     
         modalBox.style.display = 'none';
-        modalBox.style.transitionDuration = '3s';
     
     };
 
@@ -41,14 +39,6 @@ function toggleModal() {
 let studentsArray = [
     
     {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Pedro', 
-    'lastName': 'Luna',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
     'firstName': 'Marlos', 
     'lastName': 'Gonçalves',
     'role': 'Monitor',
@@ -56,70 +46,6 @@ let studentsArray = [
     'statusHTML': 'Active',
     'mode': 'Onsite'},
 
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Pedro', 
-    'lastName': 'Luna',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Marlos', 
-    'lastName': 'Gonçalves',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Marlos', 
-    'lastName': 'Gonçalves',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Lucas', 
-    'lastName': 'Oliveira',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Pedro', 
-    'lastName': 'Luna',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Marlos', 
-    'lastName': 'Gonçalves',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Lucas', 
-    'lastName': 'Oliveira',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Pedro', 
-    'lastName': 'Luna',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-    
     {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
     'firstName': 'Pedro', 
     'lastName': 'Luna',
@@ -234,11 +160,11 @@ function submitCard() {
         }
     });
 
-    // createPageDot();
+    createPageDot();
 
 };
 
-
+console.log(buttonBox.innerHTML)
 
 // Função que define a página escolhida a partir dos botões de página redondos (aparentemente funcionando normalmente)
 
@@ -267,16 +193,17 @@ function changePage(btnNumber) {
 
 function createPageDot() {
 
+    buttonBox.innerHTML = '';
+
     studentsArray.forEach((user, contagem) => {
         
-        if (Math.floor(contagem/11) === contagem/11) {
+        if (Math.floor(contagem/12) === contagem/12) {
 
-            buttonBox.style.display = 'flex';
-            indexPageBox.style.display = 'flex';
+            // console.log('true');
 
-            const newButton = document.createElement('button');
+            const newButton = document.createElement('div');
             const buttonHTML = `
-            <button class="button" onclick="changePage(${math.floor(contagem/11 + 1)})">  </button>
+            <button class="button" onclick="changePage(${Math.floor(contagem/11 + 1)})">  </button>
             `;
             newButton.innerHTML = buttonHTML;
             buttonBox.appendChild(newButton);
