@@ -1,11 +1,5 @@
 const cardBox = document.getElementById("card-box");
-const modalDiv = document.getElementById('modal-div');
-const button1 = document.getElementById('button1');
-const button2 = document.getElementById('button2');
-const button3 = document.getElementById('button3');
-const button4 = document.getElementById('button4');
-const button5 = document.getElementById('button5');
-const button6 = document.getElementById('button6');
+const modalBox = document.getElementById('modal-box');
 const firstName = document.getElementById('first-name');
 const lastName = document.getElementById('last-name');
 const role = document.getElementById('role');
@@ -13,6 +7,9 @@ const birthday = document.getElementById('birthday');
 const statusHTML = document.getElementById('status');
 const mode = document.getElementById('mode');
 const image = document.getElementById('image');
+const indexPage = document.getElementById('index-page');
+const indexPageBox = document.getElementById('index-page-box');
+const buttonBox = document.getElementById('button-box');
 
 
 // Função que mostra e esconde o Modal (aparentemente funcionando normalmente)
@@ -20,23 +17,40 @@ const image = document.getElementById('image');
 let showModal = false;
 
 function toggleModal() {
+
     showModal = !showModal;
+
     if (showModal === true) {
-        modalDiv.style.display = 'flex';
+
+        modalBox.style.display = 'flex';
+        modalBox.style.transitionDuration = '3s';
+    
     }else {
-        modalDiv.style.display = 'none';
+    
+        modalBox.style.display = 'none';
+        modalBox.style.transitionDuration = '3s';
+    
     };
 
 }
 
 
-// Adicionei 60 alunos para testar a quebra das páginas
+
+// Adicionei 10 alunos para testar a quebra das páginas
 
 let studentsArray = [
     
     {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Lucas', 
-    'lastName': 'Oliveira',
+    'firstName': 'Pedro', 
+    'lastName': 'Luna',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Marlos', 
+    'lastName': 'Gonçalves',
     'role': 'Monitor',
     'birthday': '2001/01/14',
     'statusHTML': 'Active',
@@ -45,6 +59,14 @@ let studentsArray = [
     {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
     'firstName': 'Pedro', 
     'lastName': 'Luna',
+    'role': 'Monitor',
+    'birthday': '2001/01/14',
+    'statusHTML': 'Active',
+    'mode': 'Onsite'},
+
+    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
+    'firstName': 'Marlos', 
+    'lastName': 'Gonçalves',
     'role': 'Monitor',
     'birthday': '2001/01/14',
     'statusHTML': 'Active',
@@ -97,23 +119,7 @@ let studentsArray = [
     'birthday': '2001/01/14',
     'statusHTML': 'Active',
     'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Marlos', 
-    'lastName': 'Gonçalves',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Lucas', 
-    'lastName': 'Oliveira',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
+    
     {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
     'firstName': 'Pedro', 
     'lastName': 'Luna',
@@ -131,14 +137,6 @@ let studentsArray = [
     'mode': 'Onsite'},
 
     {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Lucas', 
-    'lastName': 'Oliveira',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
     'firstName': 'Pedro', 
     'lastName': 'Luna',
     'role': 'Monitor',
@@ -149,22 +147,6 @@ let studentsArray = [
     {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
     'firstName': 'Marlos', 
     'lastName': 'Gonçalves',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Lucas', 
-    'lastName': 'Oliveira',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Pedro', 
-    'lastName': 'Luna',
     'role': 'Monitor',
     'birthday': '2001/01/14',
     'statusHTML': 'Active',
@@ -216,309 +198,11 @@ let studentsArray = [
     'role': 'Monitor',
     'birthday': '2001/01/14',
     'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Marlos', 
-    'lastName': 'Gonçalves',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Lucas', 
-    'lastName': 'Oliveira',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Pedro', 
-    'lastName': 'Luna',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Marlos', 
-    'lastName': 'Gonçalves',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Lucas', 
-    'lastName': 'Oliveira',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Pedro', 
-    'lastName': 'Luna',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Marlos', 
-    'lastName': 'Gonçalves',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Lucas', 
-    'lastName': 'Oliveira',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Pedro', 
-    'lastName': 'Luna',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Marlos', 
-    'lastName': 'Gonçalves',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Lucas', 
-    'lastName': 'Oliveira',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Pedro', 
-    'lastName': 'Luna',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Marlos', 
-    'lastName': 'Gonçalves',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Lucas', 
-    'lastName': 'Oliveira',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Pedro', 
-    'lastName': 'Luna',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Marlos', 
-    'lastName': 'Gonçalves',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Lucas', 
-    'lastName': 'Oliveira',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Pedro', 
-    'lastName': 'Luna',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Marlos', 
-    'lastName': 'Gonçalves',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Lucas', 
-    'lastName': 'Oliveira',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Pedro', 
-    'lastName': 'Luna',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Marlos', 
-    'lastName': 'Gonçalves',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Lucas', 
-    'lastName': 'Oliveira',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Pedro', 
-    'lastName': 'Luna',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Marlos', 
-    'lastName': 'Gonçalves',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Lucas', 
-    'lastName': 'Oliveira',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Pedro', 
-    'lastName': 'Luna',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Marlos', 
-    'lastName': 'Gonçalves',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Lucas', 
-    'lastName': 'Oliveira',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Pedro', 
-    'lastName': 'Luna',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Marlos', 
-    'lastName': 'Gonçalves',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Lucas', 
-    'lastName': 'Oliveira',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Pedro', 
-    'lastName': 'Luna',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Marlos', 
-    'lastName': 'Gonçalves',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Lucas', 
-    'lastName': 'Oliveira',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Pedro', 
-    'lastName': 'Luna',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
-
-    {'image': 'https://i.im.ge/2022/09/03/ObJ276.OQPoT0-DSC-0368.jpg',
-    'firstName': 'Marlos', 
-    'lastName': 'Gonçalves',
-    'role': 'Monitor',
-    'birthday': '2001/01/14',
-    'statusHTML': 'Active',
-    'mode': 'Onsite'},
+    'mode': 'Onsite'}
 ]
 
 
-// Função que recebe as informações e inclui o aluno novo na posição 0 do studentsArray usando .unshift e cria o card na tela (está com bug, e não estou conseguindo debugar)
 
-let indexButton = 1;
 // console.log(studentsArray);
 
 function submitCard() {
@@ -537,15 +221,12 @@ function submitCard() {
     statusHTML.value = '';
     mode.value = '';
     cardBox.innerHTML = '';
+    indexPage.innerHTML = '1';
 
     
-    let showModal = 'false';
     toggleModal();
 
 
-    console.log(indexButton);
-
-    
     studentsArray.forEach((user, contagem) => {
         if (contagem < 12) {
             studentsArray => studentsArray.splice(1, 12)
@@ -553,161 +234,65 @@ function submitCard() {
         }
     });
 
-    button1.style.backgroundColor = '#ffffff';
-    button2.style.backgroundColor = '#c79051a1';
-    button3.style.backgroundColor = '#c79051a1';
-    button4.style.backgroundColor = '#c79051a1';
-    button5.style.backgroundColor = '#c79051a1';
-    button6.style.backgroundColor = '#c79051a1';
+    // createPageDot();
 
 };
 
 
-// Define o botão 1 branco como padrão de carregamento de página
-
-button1.style.backgroundColor = '#ffffff';
-
 
 // Função que define a página escolhida a partir dos botões de página redondos (aparentemente funcionando normalmente)
 
-function showCards(btnNumber) {
-    if (btnNumber === 1) {
-        let indexButton = 1;
-        button1.style.backgroundColor = '#ffffff';
-        button2.style.backgroundColor = '#c79051a1';
-        button3.style.backgroundColor = '#c79051a1';
-        button4.style.backgroundColor = '#c79051a1';
-        button5.style.backgroundColor = '#c79051a1';
-        button6.style.backgroundColor = '#c79051a1';
-        cardBox.innerHTML = '';
+function changePage(btnNumber) {
 
+    cardBox.innerHTML = '';
 
-        studentsArray.forEach((user, contagem) => {
-            if (contagem < 12) {
-                studentsArray => studentsArray.splice(1, 12)
-                renderUserCard(user)
-            }
-        });
+    indexPage.innerHTML = btnNumber;
 
-        console.log(indexButton);
+    let pageLenght = 12;
 
-    }
-
-    if (btnNumber === 2) {
-        let indexButton = 2;
-        button1.style.backgroundColor = '#c79051a1';
-        button2.style.backgroundColor = '#ffffff';
-        button3.style.backgroundColor = '#c79051a1';
-        button4.style.backgroundColor = '#c79051a1';
-        button5.style.backgroundColor = '#c79051a1';
-        button6.style.backgroundColor = '#c79051a1';
-        cardBox.innerHTML = '';
-
-
-        studentsArray.forEach((user, contagem) => {
-            if (contagem > 11 && contagem < 24) {
-                studentsArray => studentsArray.splice(12, 12)
-                renderUserCard(user)
-            }
-        });
-
-        console.log(indexButton);
-
-    }
-
-    if (btnNumber === 3) {
-        let indexButton = 3;
-        button1.style.backgroundColor = '#c79051a1';
-        button2.style.backgroundColor = '#c79051a1';
-        button3.style.backgroundColor = '#ffffff';
-        button4.style.backgroundColor = '#c79051a1';
-        button5.style.backgroundColor = '#c79051a1';
-        button6.style.backgroundColor = '#c79051a1';
-        cardBox.innerHTML = '';
-
+    studentsArray.forEach((user, contagem) => {
         
-        studentsArray.forEach((user, contagem) => {
-            if (contagem > 23 && contagem < 36) {
-                studentsArray => studentsArray.splice(24, 12)
-                renderUserCard(user)
-            }
-        });
+        if ( 12*((btnNumber) - 1) - 1 < contagem && contagem < 12*(btnNumber) ) {
+            studentsArray => studentsArray.splice(12*((btnNumber) - 1), 12)
+            renderUserCard(user)
+        }
 
-        console.log(indexButton);
+    });
 
-    }
-
-    if (btnNumber === 4) {
-        let indexButton = 4;
-        button1.style.backgroundColor = '#c79051a1';
-        button2.style.backgroundColor = '#c79051a1';
-        button3.style.backgroundColor = '#c79051a1';
-        button4.style.backgroundColor = '#ffffff';
-        button5.style.backgroundColor = '#c79051a1';
-        button6.style.backgroundColor = '#c79051a1';
-        cardBox.innerHTML = '';
-
-
-        studentsArray.forEach((user, contagem) => {
-            if (contagem > 35 && contagem < 48) {
-                studentsArray => studentsArray.splice(36, 12)
-                renderUserCard(user)
-            }
-        });
-
-        console.log(indexButton);
-
-    }
-
-    if (btnNumber === 5) {
-        let indexButton = 5;
-        button1.style.backgroundColor = '#c79051a1';
-        button2.style.backgroundColor = '#c79051a1';
-        button3.style.backgroundColor = '#c79051a1';
-        button4.style.backgroundColor = '#c79051a1';
-        button5.style.backgroundColor = '#ffffff';
-        button6.style.backgroundColor = '#c79051a1';
-        cardBox.innerHTML = '';
-
-
-        studentsArray.forEach((user, contagem) => {
-            if (contagem > 47 && contagem < 60) {
-                studentsArray => studentsArray.splice(48, 12)
-                renderUserCard(user)
-            }
-        });
-
-        console.log(indexButton);
-
-    }
-
-    if (btnNumber === 6) {
-        let indexButton = 6;
-        button1.style.backgroundColor = '#c79051a1';
-        button2.style.backgroundColor = '#c79051a1';
-        button3.style.backgroundColor = '#c79051a1';
-        button4.style.backgroundColor = '#c79051a1';
-        button5.style.backgroundColor = '#c79051a1';
-        button6.style.backgroundColor = '#ffffff';
-        cardBox.innerHTML = '';
-
-        
-        studentsArray.forEach((user, contagem) => {
-            if (contagem > 59 && contagem < 72) {
-                studentsArray => studentsArray.splice(60, 12)
-                renderUserCard(user)
-            }
-        });
-
-        console.log(indexButton);
-
-    };
 }
+
+
+
+// Função que gera os botões automaticamente pelo tamanho do array de estudantes
+
+function createPageDot() {
+
+    studentsArray.forEach((user, contagem) => {
+        
+        if (Math.floor(contagem/11) === contagem/11) {
+
+            buttonBox.style.display = 'flex';
+            indexPageBox.style.display = 'flex';
+
+            const newButton = document.createElement('button');
+            const buttonHTML = `
+            <button class="button" onclick="changePage(${math.floor(contagem/11 + 1)})">  </button>
+            `;
+            newButton.innerHTML = buttonHTML;
+            buttonBox.appendChild(newButton);
+
+        }
+
+    });
+
+}
+
 
 
 // Função que gera os cards do studentsArray (aparentemente funcionando normalmente)
 
 function renderUserCard(studentsArray) {
+
     const cardHTML = `
         <div class="card">      
             <img class="image" src=${studentsArray.image}>
@@ -730,10 +315,12 @@ function renderUserCard(studentsArray) {
             </div>
         </div>
     `;
+
     const newCard = document.createElement('div');
     newCard.innerHTML = cardHTML;
     cardBox.appendChild(newCard);
 };
+
 
 
 // forEach que gera a página inicial com os 12 primeiros cards com studentsArray (aparentemente funcionando normalmente)
@@ -744,3 +331,5 @@ studentsArray.forEach((user, contagem) => {
         renderUserCard(user)
     }
 });
+
+createPageDot();
