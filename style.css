@@ -146,7 +146,7 @@
 
 .index-page-box {
     position: absolute;
-    top: 77vh;
+    top: 82vh;
     width: 4vh;
     height: 4vh;
     display: flex;
@@ -165,7 +165,7 @@
 
 .button-box {
     position: absolute;
-    top: 84vh;
+    top: 88vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -184,8 +184,8 @@
 
 .button:hover {
     background-color: #997c5c;
-    width: 0.95vw;
-    height: 0.95vw;
+    width: 1vw;
+    height: 1vw;
     border-radius: 50%;
     border: none;
     transition-duration: 0.1s;
@@ -193,7 +193,7 @@
 
 .button-pedro {
     position: absolute;
-    top: 88vh
+    top: 92vh
 }
 
 .add-button {
@@ -208,8 +208,8 @@
 }
 
 .add-button:hover {
-    width: 7.2vw;
-    height: 5.2vh;
+    width: 7vw;
+    height: 5vh;
     border-radius: 30px;
     background-color: #997c5c;
     font-family:Georgia, 'Times New Roman', Times, serif;
